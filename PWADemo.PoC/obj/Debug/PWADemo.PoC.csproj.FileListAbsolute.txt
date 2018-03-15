@@ -1,0 +1,6 @@
+D:\Local.TFS.117\4010_Dedicated_Team_MS_CRM_Online\PoC\Progressive Web App\PWADemo\PWADemo.PoC\bin\PWADemo.PoC.dll.config
+D:\Local.TFS.117\4010_Dedicated_Team_MS_CRM_Online\PoC\Progressive Web App\PWADemo\PWADemo.PoC\bin\PWADemo.PoC.dll
+D:\Local.TFS.117\4010_Dedicated_Team_MS_CRM_Online\PoC\Progressive Web App\PWADemo\PWADemo.PoC\bin\PWADemo.PoC.pdb
+D:\Local.TFS.117\4010_Dedicated_Team_MS_CRM_Online\PoC\Progressive Web App\PWADemo\PWADemo.PoC\obj\Debug\PWADemo.PoC.csproj.CoreCompileInputs.cache
+D:\Local.TFS.117\4010_Dedicated_Team_MS_CRM_Online\PoC\Progressive Web App\PWADemo\PWADemo.PoC\obj\Debug\PWADemo.PoC.dll
+D:\Local.TFS.117\4010_Dedicated_Team_MS_CRM_Online\PoC\Progressive Web App\PWADemo\PWADemo.PoC\obj\Debug\PWADemo.PoC.pdb

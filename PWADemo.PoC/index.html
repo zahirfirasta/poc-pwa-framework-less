@@ -1,0 +1,146 @@
+<!--
+ Copyright 2016 Google Inc.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avant IT</title>
+    <link rel="stylesheet" type="text/css" href="styles/inline.css">
+    <link rel="stylesheet" type="text/css" href="styles/material.blue-green.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- TODO add manifest here -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Avant IT">
+    <!--<link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">-->
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title header__title">Avant IT</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
+                    <button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                        Enable Push Messaging
+                      </button>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Avant IT</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#">Home</a>
+                <a class="mdl-navigation__link" href="#">Contact</a>
+                <a class="mdl-navigation__link" href="#">Products</a>
+                <a class="mdl-navigation__link" href="#">Services</a>
+                <a class="mdl-navigation__link" href="#">Portfolios</a>
+                <a class="mdl-navigation__link" href="#">Achievements</a>
+                <a class="mdl-navigation__link" href="#">About</a>
+                <a class="mdl-navigation__link" href="#">Blog</a>
+            </nav>
+        </div>
+
+        <main class="main mdl-layout__content container-fluid">
+            <div class="mdl-grid row">
+                <div class="card cardTemplate weather-forecast mdl-cell mdl-cell--12-col mdl-cell--12-col-desktop col-sm-12" hidden>
+                    <div class="author-wrapper">
+                        <a class="authorUrl"><img class="authorAvatar_url" />
+                        </a>
+                    </div>
+                    <div class="commitAuthorName-block"><span class="title">Author Name</span> <span class="commitAuthorName"></span></div>
+                    <div class="author-loginId" hidden></div>
+                    <div class="commitAuthorEmail-block"><span class="title">Author Email</span> <span class="commitAuthorEmail"></span></div>
+                    <div class="commitDate-block"><span class="title">Date of Commit</span> <span class="commitDate"></span></div>
+                    <div class="commitMessage-block"><span class="title">Message</span>
+                        <p class="commitMessage"></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <section class="subscription-details js-subscription-details is-invisible">
+        <pre><code class="js-subscription-json"></code></pre>
+    </section>
+    <div class="dialog-container">
+        <div class="dialog">
+            <!--<div class="dialog-title">Detail Page</div>-->
+            <div class="dialog-body">
+                <div class="author-wrapper1">
+                    <a class="url"><img class="avatarUrl" /></a>
+                </div>
+                <div class="AuthorName-block"><span class="title">Author Name</span> <span class="nameAuthor"></span></div>
+                <div class="AuthorName-block"><span class="title">Login ID</span> <span class="login"></span></div>
+                <div class="company-block"><span class="title">Company</span> <span class="company"></span></div>
+                <div class="location-block"><span class="title">Author Location</span> <span class="location"></span></div>
+                <div class="blog-block"><span class="title">Blog</span> <a class="blogUrl"><span class="blogUrl"></span></a></div>
+            </div>
+            <div class="dialog-buttons">
+                <button id="close-popup" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+          <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+        </svg>
+    </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Uncomment the line below when ready to test with fake data -->
+    <script src="scripts/app.js" async></script>
+    <script src="scripts/material.min.js" async></script>
+    <!--<script src="scripts/bootstrap.min.js" async></script>-->
+
+</body>
+
+</html>

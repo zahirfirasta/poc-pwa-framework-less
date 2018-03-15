@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PWADemo.PoC", "PWADemo.PoC\PWADemo.PoC.csproj", "{57BEB2A7-EA95-4D71-A9E6-4B0F07642C67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57BEB2A7-EA95-4D71-A9E6-4B0F07642C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57BEB2A7-EA95-4D71-A9E6-4B0F07642C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57BEB2A7-EA95-4D71-A9E6-4B0F07642C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57BEB2A7-EA95-4D71-A9E6-4B0F07642C67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {516401AF-346A-4B6A-A357-5371DC18524A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.0.0.117:8080/tfs/gtltfsteamsites
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PWADemo.PoC\\PWADemo.PoC.csproj
+		SccProjectName1 = PWADemo.PoC
+		SccLocalPath1 = PWADemo.PoC
+	EndGlobalSection
+EndGlobal
